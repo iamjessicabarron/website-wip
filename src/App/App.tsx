@@ -44,12 +44,11 @@ const App: React.FC = () => {
         <h1>Jessica Barron</h1>
         <h2>Developer & Designer</h2>
         <p>
-          I'm looking for a new role to grow in Brisbane, Australia. 
+          Currently on the hunt for my dream role as a product focused developer in Brisbane, Australia. Wanna catch up?
         </p>
-        <button>Download résumé (PDF)</button>
 
-        <a href={`${process.env.PUBLIC_URL}/Resume.pdf`} download>
-          
+        <a href={`${process.env.PUBLIC_URL}/Resume_JessicaBarron_DevDesign.pdf`} download>
+          <button>Download résumé (PDF)</button>
         </a>
       </div>
       <div className="footerRightContent">
