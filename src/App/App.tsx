@@ -1,6 +1,8 @@
 import React from 'react';
+import Timeline from '../Timeline/Timeline'
 
 import logo from './logo.png';
+// import Resume from './Resume.pdf'
 // import sky from './sky.png';
 
 import './App.css';
@@ -19,13 +21,23 @@ const App: React.FC = () => {
             Hi, I'm Jess
           </h1>
           <h2>
-            I'm a developer with a design slant and a passion for making beautiful and usable products.
+            I'm a developer with a design slant, and a passion for making beautiful and usable products.
           </h2>
-          <p>Probably something else that's nice</p>
-          <p>Idk</p>
-          <p>Just something to make this loongerrr</p>
-          <p>Just something to make this loongerrr</p>
         </div>
+
+        <div className="timelineContainer">
+            {/* <div className="arrow standing">
+              <img src={arrow} alt="Decorative double arrow" />
+            </div>
+            <div className="arrow moving">
+              <img src={arrow} alt="Decorative single arrow" />
+            </div> */}
+            <Timeline />
+          </div>
+          <div className ="timelineCloser">
+            <h2>And more is yet to come...</h2>
+          </div>
+
       </main>
       <footer>
       <div className="resume">
@@ -35,12 +47,26 @@ const App: React.FC = () => {
           I'm looking for a new role to grow in Brisbane, Australia. 
         </p>
         <button>Download résumé (PDF)</button>
+
+        <a href={`${process.env.PUBLIC_URL}/Resume.pdf`} download>
+          
+        </a>
       </div>
+      <div className="footerRightContent">
         <div className="social">
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-linkedin-in"></i>
-          <i className="fab fa-github"></i>
+          <a href="https://www.linkedin.com/in/iamjessicabarron/">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/iamjessicabarron" target="_blank">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/iamjessbarron">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/iamjessicabarron/">
+            <i className="fab fa-instagram"></i>
+          </a>
+          </div>
         </div>
       </footer>
     </div>
