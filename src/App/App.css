@@ -1,0 +1,186 @@
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+main {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004263+0,188399+21,00a6bc+33,ffffff+99 */
+    background: #004263; /* Old browsers */
+    background: -moz-linear-gradient(top, #004263 0%, #188399 21%, #00a6bc 33%, #ffffff 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #004263 0%,#188399 21%,#00a6bc 33%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #004263 0%,#188399 21%,#00a6bc 33%,#ffffff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004263', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    overflow: hidden;
+}
+
+body * {
+  color: #ffffff;
+}
+
+
+.App {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.logo {
+  width: 100px;
+  padding-left: 5%;
+  padding-top: 10%;
+  
+}
+
+.logo img {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+h2 {
+  position: relative;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.sky {
+	content: "";
+	background-image: url(./sky.png);
+	background-repeat: repeat-x, repeat-x, repeat-x;
+	width: 100%;
+	height: 100vh;
+	pointer-events: none;
+	margin-top: -1px;
+	background-position-x: 0%, 0%, 0%;
+  transition: all 0.3s ease-out;
+  position: absolute;
+}
+
+.feature h2 {
+  padding-bottom: 10%;
+  
+}
+a {
+  color: yellow!important;
+}
+
+.feature {
+  box-sizing: border-box;
+  padding: 5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+footer {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#188399+4,00a6bc+33,ffffff+99 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#188399+0,00a6bc+11,ffffff+99 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38b8c4+2,ffffff+99 */
+background: rgb(56,184,196); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(56,184,196,1) 2%, rgba(255,255,255,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(56,184,196,1) 2%,rgba(255,255,255,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(56,184,196,1) 2%,rgba(255,255,255,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b8c4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  padding: 5%;
+  transition: height 2s, width 2s;
+  box-model: border-box;
+}
+
+footer * {
+  color: #004263;
+  font-size: 20px;
+}
+
+footer a {
+  background-image: url("/images/highlight.svg")
+}
+
+footer .social {
+  margin-top: 40px;
+}
+
+footer button {
+  padding: 12px 18px;
+  background-color: #004263;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: -6px;
+  margin-top: 20px;
+}
+
+footer h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+footer h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+footer p, footer a  {
+  font-size: 14px;
+  font-weight: 600
+}
+
+i.fab {
+  padding: 0px 10px;
+}
+
+
+/* Will apply if larger than this width  */
+@media (min-width: 600px) { 
+
+
+  .sky {
+    width: 1200px;
+  }
+  
+  .feature {
+    max-width: 50%;
+  }
+  
+  .timelineContainer {
+    width: 50%;
+    display: inline-block;
+    margin-top: 200px;
+
+  }
+
+  .timelineElement {
+    padding-left: 60px;
+  }
+
+  .timelineElementSecondary {
+    margin-left: -100%;
+    width: 100%;
+  }
+
+  footer {
+    background-color: yellow;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  footer .resume {
+    display: inline-block;
+    width: 33%;
+    margin-right: 34%;
+  }
+
+  footer .social {
+    display: inline-block;
+    width: 33%;
+    bottom: 0;
+  }
+}
