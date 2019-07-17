@@ -23,6 +23,9 @@ const App: React.FC = () => {
           <h2>
             I'm a developer with a design slant, and a passion for making beautiful and usable products.
           </h2>
+          <h3>
+            Here are a few of my little side projects...
+          </h3>
         </div>
 
         <div className="timelineContainer">

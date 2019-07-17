@@ -14,8 +14,10 @@ const Timeline: React.FC = () => {
         <TimelineElement 
           title="Join Four" 
           year="2019"
-          desc="A coding challenge, turned excuse to learn some new things and make something pretty. A somewhat skeuomorphic recreated of the game Connect Four, for the web. Designed in Figma, created with ReactJS + TypeScript with CSS Animations. "
+          desc="A coding challenge, turned excuse to learn some new things and make something pretty. A somewhat skeuomorphic recreation of the game Connect Four, for the web. Designed in Figma, created with ReactJS + TypeScript with CSS Animations. "
           image={JoinFourImage}
+          link="https://join-four.jessicabarron.com/"
+          technology={["JavaScript", "ReactJS", "TypeScript", "CSS"]}
         />
         <TimelineElement 
           title="Countdown" 
@@ -23,6 +25,7 @@ const Timeline: React.FC = () => {
           desc="I can barely keep track of what month it is, let alone what day. Countdown is a tiny Chrome Extension written in JavaScript that tells you when stuff is, relative to right now."
           image={CountdownImage}
           link="https://chrome.google.com/webstore/detail/countdown/djgeajcnfiaokhbkfnepbfokanhggjao"
+          technology={["JavaScript", "HTML", "CSS"]}
         />
     </div>
   );
